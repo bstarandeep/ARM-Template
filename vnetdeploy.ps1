@@ -1,0 +1,2 @@
+New-AzResourceGroup -Name bsrgcctest -Location "canada central" #use this command when you need to create a new resource group for your deployment
+New-AzResourceGroupDeployment -DeploymentName "dep-02"   -ResourceGroupName "bsrgcctest" -Templatefile E:\custometemplate\vnet\vnet-twosubnet-template.json -TemplateParameterFile E:\custometemplate\vnet\vnet-twosubnet-parameters.json
